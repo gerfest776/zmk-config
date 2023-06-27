@@ -68,20 +68,20 @@
                         >;
                 };
                 
-                raise_layer {
-// .-------------------------------------------------------------------.       .----------------------------------------------------------------------.
-// | CMD+CTRL+SHIFT+4 |        |   PU   |   UP   |    PD    |   HOME   |       |  HOME   |    PU    |    UP   |   PD    |          | CMD+CTRL+SHIFT+4 |
-// |------------------+--------+--------+--------+----------+--------  |       |---------+----------+---------+---------+----------+------------------|
-// |                  |  CTRL  |  LEFT  |  DOWN  |   RIGHT  |   END    |       |  END    |   LEFT   |   DOWN  |  RIGHT  |   CTRL   |                  |
-// |------------------+--------+--------+--------+----------+----------|       |---------+----------+---------+---------+----------+------------------|
-// |     OUT_TOG      |        |        |        |CTRL+LEFT |CTRL+RIGHT|       |CTRL+LEFT|CTRL+RIGHT|         |         |          |   OUT_TOG        |
-// '------------------------------------+--------+----------+----------+       |---------+----------+---------+---------------------------------------'
-//                                      |  GUI   |   MO3    |          |       |         |          |         |
-//                                      '--------+----------+----------'       '---------+----------+---------'
+                raise_layer
+// .------------------------------------------------------------------.       .-------------------------------------------------------------------.
+// | CMD+CTRL+SHIFT+4 |       |   PU   |   UP   |    PD    |   HOME   |       |  HOME   |    PU    |    UP   |   PD    |       | CMD+CTRL+SHIFT+4 |
+// |------------------+-------+--------+--------+----------+--------  |       |---------+----------+---------+---------+-------+------------------|
+// |                  |  ALT  |  LEFT  |  DOWN  |   RIGHT  |   END    |       |  END    |   LEFT   |   DOWN  |  RIGHT  |  ALT  |                  |
+// |------------------+-------+--------+--------+----------+----------|       |---------+----------+---------+---------+-------+------------------|
+// |     OUT_TOG      |       |        |        |CTRL+LEFT |CTRL+RIGHT|       |CTRL+LEFT|CTRL+RIGHT|         |         |       |   OUT_TOG        |
+// '-----------------------------------+--------+----------+----------+       |---------+----------+---------+------------------------------------'
+//                                     |  GUI   |   MO3    |          |       |         |          |         |
+//                                     '--------+----------+----------'       '---------+----------+---------'
 
                         bindings = <
    &kp LG(LC(LS(N4)))  &trans        &kp PAGE_UP        &kp UP_ARROW      &kp PAGE_DOWN       &kp HOME                &kp HOME             &kp PAGE_UP             &kp UP_ARROW       &kp PAGE_DOWN      &trans          &kp LG(LC(LS(N4)))
-   &trans              &kp LCTRL     &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW     &kp END                 &kp END              &kp LEFT_ARROW          &kp DOWN_ARROW     &kp RIGHT_ARROW    &kp LCTRL       &trans
+   &trans              &kp LALT      &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW     &kp END                 &kp END              &kp LEFT_ARROW          &kp DOWN_ARROW     &kp RIGHT_ARROW    &kp RALT        &trans
    &out OUT_TOG        &trans        &trans             &trans            &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)     &kp LC(LEFT_ARROW)   &kp LC(RIGHT_ARROW)     &trans             &trans             &trans          &out OUT_TOG
                                                         &kp LGUI          &mo ADJUST          &trans                  &trans               &trans                  &trans
                         >;
