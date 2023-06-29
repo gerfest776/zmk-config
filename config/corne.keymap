@@ -70,7 +70,7 @@
                 
                 raise_layer {
 // .------------------------------------------------------------------.       .-------------------------------------------------------------------.
-// | CMD+CTRL+SHIFT+4 |       |   PU   |   UP   |    PD    |   HOME   |       |  HOME   |    PU    |    UP   |   PD    |       | CMD+CTRL+SHIFT+4 |
+// | CMD+CTRL+SHIFT+4 |       |   PU   |   UP   |    PD    |   HOME   |       |  HOME   |    PU    |    UP   |   PD    |       |    CMD+SHIFT+4   |
 // |------------------+-------+--------+--------+----------+--------  |       |---------+----------+---------+---------+-------+------------------|
 // |                  |  ALT  |  LEFT  |  DOWN  |   RIGHT  |   END    |       |  END    |   LEFT   |   DOWN  |  RIGHT  |  ALT  |                  |
 // |------------------+-------+--------+--------+----------+----------|       |---------+----------+---------+---------+-------+------------------|
@@ -80,7 +80,7 @@
 //                                     '--------+----------+----------'       '---------+----------+---------'
 
                         bindings = <
-   &kp LG(LC(LS(N4)))  &trans        &kp PAGE_UP        &kp UP_ARROW      &kp PAGE_DOWN       &kp HOME                &kp HOME             &kp PAGE_UP             &kp UP_ARROW       &kp PAGE_DOWN      &trans          &kp LG(LC(LS(N4)))
+   &kp LG(LC(LS(N4)))  &trans        &kp PAGE_UP        &kp UP_ARROW      &kp PAGE_DOWN       &kp HOME                &kp HOME             &kp PAGE_UP             &kp UP_ARROW       &kp PAGE_DOWN      &trans          &kp LG(LS(N4))
    &trans              &kp LALT      &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW     &kp END                 &kp END              &kp LEFT_ARROW          &kp DOWN_ARROW     &kp RIGHT_ARROW    &kp RALT        &trans
    &out OUT_TOG        &trans        &trans             &trans            &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)     &kp LC(LEFT_ARROW)   &kp LC(RIGHT_ARROW)     &trans             &trans             &trans          &out OUT_TOG
                                                         &kp LGUI          &mo ADJUST          &trans                  &trans               &trans                  &trans
