@@ -72,7 +72,7 @@
 // .------------------------------------------------------------------.       .-------------------------------------------------------------------.
 // | CMD+CTRL+SHIFT+4 |       |   PU   |   UP   |    PD    |   HOME   |       |  HOME   |    PU    |    UP   |   PD    |       |    CMD+SHIFT+4   |
 // |------------------+-------+--------+--------+----------+--------  |       |---------+----------+---------+---------+-------+------------------|
-// |                  |  ALT  |  LEFT  |  DOWN  |   RIGHT  |   END    |       |  END    |   LEFT   |   DOWN  |  RIGHT  |  ALT  |                  |
+// |                  |  ALT  |  LEFT  |  DOWN  |   RIGHT  |   END    |       |  END    |   LEFT   |   DOWN  |  RIGHT  |  ALT  |    CMD+SHIFT+5   |
 // |------------------+-------+--------+--------+----------+----------|       |---------+----------+---------+---------+-------+------------------|
 // |     OUT_TOG      |       |        |        |CTRL+LEFT |CTRL+RIGHT|       |CTRL+LEFT|CTRL+RIGHT|         |         |       |   OUT_TOG        |
 // '-----------------------------------+--------+----------+----------+       |---------+----------+---------+------------------------------------'
@@ -81,7 +81,7 @@
 
                         bindings = <
    &kp LG(LC(LS(N4)))  &trans        &kp PAGE_UP        &kp UP_ARROW      &kp PAGE_DOWN       &kp HOME                &kp HOME             &kp PAGE_UP             &kp UP_ARROW       &kp PAGE_DOWN      &trans          &kp LG(LS(N4))
-   &trans              &kp LALT      &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW     &kp END                 &kp END              &kp LEFT_ARROW          &kp DOWN_ARROW     &kp RIGHT_ARROW    &kp RALT        &trans
+   &trans              &kp LALT      &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW     &kp END                 &kp END              &kp LEFT_ARROW          &kp DOWN_ARROW     &kp RIGHT_ARROW    &kp RALT        &kp LG(LS(N5))
    &out OUT_TOG        &trans        &trans             &trans            &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)     &kp LC(LEFT_ARROW)   &kp LC(RIGHT_ARROW)     &trans             &trans             &trans          &out OUT_TOG
                                                         &kp LGUI          &mo ADJUST          &trans                  &trans               &trans                  &trans
                         >;
@@ -91,9 +91,9 @@
 // .--------------------------------------------------------.       .--------------------------------------------------------------.
 // |  RESET  |        |        |        |         |         |       |  VOL+  |  BGT+  |         |         |          |    RESET    |
 // |---------+--------+--------+--------+---------+---------|       |--------+--------+---------+---------+----------+-------------|
-// |         |  BT1   |  BT2   |  BT3   |  BT4    |  BT5    |       |  VOL-  |  BGT+  |         |         |          |             |
+// |  BTCLR  |  BT1   |  BT2   |  BT3   |  BT4    |  BT5    |       |  VOL-  |  BGT+  |         |         |          |             |
 // |---------+--------+--------+--------+---------+---------|       |--------+--------+---------+---------+----------+-------------|
-// |         |  BTCLR |        |        |         |         |       |        |        |         |         |          |             |
+// |         |        |        |        |         |         |       |        |        |         |         |          |             |
 // '---------------------------+--------+---------+---------+       |--------+--------+---------+----------------------------------'
 //                             |        |         |         |       |        |        |         |
 //                             '--------+---------+---------'       '--------+--------+---------'
@@ -101,8 +101,8 @@
                         bindings = <
 
    &sys_reset      &trans          &trans         &trans          &trans          &trans            &kp C_VOLUME_UP    &kp C_BRI_INC       &trans      &trans      &trans      &sys_reset
-   &trans          &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      &kp C_VOLUME_DOWN  &kp C_BRI_DEC       &trans      &trans      &trans      &trans
-   &trans          &bt BT_CLR      &trans         &trans          &trans          &trans            &trans             &trans              &trans      &trans      &trans      &trans
+   &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      &kp C_VOLUME_DOWN  &kp C_BRI_DEC       &trans      &trans      &trans      &trans
+   &trans          &trans          &trans         &trans          &trans          &trans            &trans             &trans              &trans      &trans      &trans      &trans
                                                   &trans          &trans          &trans            &trans             &trans              &trans
                         >;
                 };
